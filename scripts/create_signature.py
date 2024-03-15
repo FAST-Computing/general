@@ -13,11 +13,11 @@ for index, person in people.iterrows():
     print(person)
     import copy
     current_signature = copy.deepcopy(template_signature)
-    current_signature = current_signature.replace(r"{NAME}", person['NAME'])
-    current_signature = current_signature.replace(r"{ROLE}", person['ROLE'])
-    current_signature = current_signature.replace(r"{MAIL}", person['MAIL'])
-    current_signature = current_signature.replace(r"{PHONE}", person['PHONE'])
-    current_signature = current_signature.replace(r"{PICTURE}", person['PICTURE'])
+    current_signature = current_signature.replace(r"{NAME}", person['NAME'].strip())
+    current_signature = current_signature.replace(r"{ROLE}", person['ROLE'].strip())
+    current_signature = current_signature.replace(r"{MAIL}", person['MAIL'].strip())
+    current_signature = current_signature.replace(r"{PHONE}", person['PHONE'].strip())
+    current_signature = current_signature.replace(r"{PICTURE}", person['PICTURE'].strip())
 
     with open(f'signatures/{person["NAME"]}.html', 'w') as f:
         f.write(current_signature)
