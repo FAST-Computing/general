@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     body {
-      font-family: Arial, sans-serif;
       max-width: 1024px; /* Adjust the maximum width as per your requirement */
+      font-weight: 400;
     }
     .primary-signature-container {
       width: 100%;
@@ -57,10 +55,6 @@
     }
 
     .picture {
-      position: relative;
-      right: 10px;
-      top: 0px;
-      transform: translateY(-80%);
       border-radius: 100%;
     }
     .disclaimer {
@@ -78,77 +72,72 @@
         font-size: 0.8rem;
     }
     }
+
+    td {
+      padding: 30px;
+    }
   </style>
 </head>
 <body>
-  <div class="primary-signature-container container">
-    <div class="row">
-        <div class="col-8">
-            <div class="name h4">Andrea Martini</div>
-            <hr />
-            <div class="job-title h5 text-uppercase role">CEO & co-founder</div>
-        </div>
-
-        <div class="col-4">
-            <a href="https://fastcomputing.net"><img class="float-right" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/logotext_fast_twoline.svg.png" width="220px"></a>
-        </div>
+  <table class="p-5" style="width: 100%;">
+    <tr class="primary-signature-container">
+      <td style="width: 60%;">
+        <div class="name h4">Andrea Martini</div>
+        <hr />
+        <div class="job-title h5 text-uppercase role">CEO & co-founder</div>
+        <div class="contact-info mt-3 col-6">
+          <p class="mb-1 mail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            &nbsp;
+            <a href=mailto:"andrea.martini@fastcomputing.net”>
+              andrea.martini@fastcomputing.net
+            </a>
+          </p>
+          <p class="mb-1">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            &nbsp;
+            <a href=callto:"+39 3665688355”>+39 3665688355</a>
+          </p>
+          <!-- <p class="mb-1">
+                  <i class="fa fa-globe" aria-hidden="true"></i>
+                  &nbsp;<a href="http://www.example.com">www.example.com</a></p> -->
     </div>
+    </td>
+    <th>
+      <div class="w-100">
+        <a href="https://fastcomputing.net"><img class="float-right" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/logotext_fast_twoline.svg.png" width="220px"></a>
+      </div>
+      <div>
+        <img class="picture mt-4" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/people/andrea-martini.jpg" width="100px">
 
+      </div>
+    </th>
 
-    <div class="contact-info mt-3 col-6">
-      <p class="mb-1 mail">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-         &nbsp;
-         <a href=mailto:"andrea.martini@fastcomputing.net”>
-            andrea.martini@fastcomputing.net
-        </a>
-      </p>
-      <p class="mb-1">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-        &nbsp;
-        <a href=callto:"+39 3665688355”>+39 3665688355</a>
-      </p>
-      <!-- <p class="mb-1">
-        <i class="fa fa-globe" aria-hidden="true"></i>
-        &nbsp;<a href="http://www.example.com">www.example.com</a></p> -->
-    </div>
-  </div>
-
-  <div class="secondary-signature-container">
-    <div class="row">
-        <div class="col-6">
-            <div class="contact-info mb-3">
-            <p class="mb-1">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                &nbsp;Headquarter: via Mazzini 20, 34121, Trieste Italy<br>
-            </p>
-            <p class="mb-1">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                &nbsp;Office: Via Bonomea 265, 34136, Trieste Italy
-            </p>
-            </div>
+    <tr class="secondary-signature-container">
+      <td>
+        <div class="contact-info mb-3">
+          <p class="mb-1">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            &nbsp;Headquarter: via Mazzini 20, 34121, Trieste Italy<br>
+          </p>
+          <p class="mb-1">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            &nbsp;Office: Via Bonomea 265, 34136, Trieste Italy
+          </p>
         </div>
-        <div class="col-2">
-            <img class="picture" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/people/andrea-martini.jpg" width="100px">
-        </div>
-        <div class="col-4">
-            <a href="https://sissa.it"><img class="float-right mx-3" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/sissa_startup_white.png" width="32px"></a>
-            <a href="https://mathlab.sissa.it"><img class="float-right mx-3" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/mathlab_white.png
-" width="32px"></a>
+      </td>
+      <td>
+        <a href="https://sissa.it"><img class="float-right mx-3" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/sissa_startup_white.png" width="32px"></a>
+        <a href="https://mathlab.sissa.it"><img class="float-right mx-3" src="https://raw.githubusercontent.com/FAST-Computing/general/main/pictures/logos/mathlab_white.png" width="32px"></a>
+      </td>
+    </tr>
 
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <p class="disclaimer">
-The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party, without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future. 
-                </p>
-            </div>
-        </div>
-  </div>
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <tr class="secondary-signature-container">
+      <td colspan="2" class="px-4 pt-0 pb-2">
+        <p class="disclaimer">
+          The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party, without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.
+        </p>
+      </td>
+    </tr>
+  </table>
 </body>
-</html>
